@@ -9,9 +9,6 @@ BRFSS_a <- read.xport("./data/LLCP2022.xpt")
 BRFSS_2022varNames <- colnames(BRFSS_a)
 
 # write out a csv file with variable names to be edited
-write.csv(BRFSS_2022varNames, "./data/BRFSS_2022varNames.csv")
-
-# to use this data with Tableau
-write.csv(BRFSS_a, "./data/BRFSS_a.csv")
+# write.csv(BRFSS_2022varNames, "./data/BRFSS_2022varNames.csv")
 
 # BRFSS_test <- read.csv("./data/BRFSS_a.csv")

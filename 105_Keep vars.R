@@ -1,21 +1,43 @@
 # define object list of variables to be kept
-BRFSSVarList <- c("VETERAN3", 
-                  "ALCDAY5",
+BRFSSVarList <- c("ALCDAY4", 
+                  "ASTHMA3",
+                  "ASTHNOW",
                   "SLEPTIM1",
                   "ASTHMA3",
-                  "X_AGE_G",
-                  "SMOKE100",
-                  "SMOKDAY2",
-                  "SEX1",
-                  "X_HISPANC",
-                  "X_MRACE1",
-                  "MARITAL",
-                  "GENHLTH",
-                  "HLTHPLN1",
+                  "DIABETE4",
                   "EDUCA",
-                  "INCOME2",
+                  "EXERANY2",
+                  "GENHLTH",
+                  "MEDCOST1",
+                  "INCOME3",
+                  "SEXVAR",
+                  "SLEPTIM1",
+                  "SMOKDAY2",
+                  "SMOKE100",
+                  "LASTDEN4",
+                  "RMVTETH4",
+                  "CVDINFR4",
+                  "CVDCRHD4",
+                  "CHCCOPD3",
+                  "DIABETE4",
+                  "VETERAN3",
+                  "MARITAL",
+                  "COVIDPOS",
+                  "COVIDSMP",
+                  "COVIDVA1",
+                  "COVIDNU1",
+                  "X_AGE_G",
                   "X_BMI5CAT",
-                  "EXERANY2")
+                  "X_HISPANC",
+                  "X_HLTHPLN",
+                  "X_IMPRACE",
+                  "X_INCOMG1",
+                  "X_MRACE2",
+                  "X_SEX",
+                  "X_SMOKER3",
+                  "X_SMOKGRP",
+                  "X_STATE",
+                  "X_YRSSMOK")
 
 # subset by varlist
 BRFSS_b <- BRFSS_a[BRFSSVarList]
@@ -26,5 +48,5 @@ colnames(BRFSS_b)
 # check rows
 nrow(BRFSS_b)
 
-
-
+# to use this data with Tableau
+write.csv(BRFSS_b, "./data/BRFSS_b.csv")
